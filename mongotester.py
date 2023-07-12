@@ -10,8 +10,7 @@ collection = db.accounts
 
 documents = list(collection.find())
 
-print(len(documents))
-print(documents[0])
+print(documents)
 
 # invbooks = []
 
