@@ -1,16 +1,22 @@
-import pymongo
+# Import pymongo library
+from pymongo import MongoClient
 
-# Connect to the MongoDB server
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+# Create a MongoClient object with the connection string
+client = MongoClient(
+    "mongodb+srv://madara:uchiha@cluster0.udl8rnv.mongodb.net/")
 
-# Get the database and the collection
-db = client["test"]
-books = db["books"]
+db = client.sample_analytics
+collection = db.accounts
 
-# Query the collection for books with genre "fantasy"
-query = {"genre": "fantasy"}
-results = books.find(query)
+documents = list(collection.find())
 
-# Print the results
-for book in results:
-    print(book)
+print(len(documents))
+print(documents[0])
+
+# invbooks = []
+
+# for i in range(len(documents)):
+#     if "InvestmentStock" in list(documents[i].products):
+#         invbooks.append(documents[i])
+
+# print(len(invbooks))
