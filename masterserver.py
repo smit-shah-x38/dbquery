@@ -12,7 +12,7 @@ app.config["CORS_HEADERS"] = "Content-Type"
 llm = OpenAI(
     openai_api_key="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")
 conversation_history = [
-    "You are a helpful assistant that specializes in creating queries for databases. If what the user asks is related to querying a database, return the query in both MongoDB and SQL, otherwise simply return Please ask a relevant question"
+    "You are a helpful assistant that specializes in creating queries for databases. If what the user asks is related to querying a database, return the query in MongoDB, otherwise simply return Please ask a relevant question. The database is called sample_analytics and the collection is called customers. The schema of customers is _id(integer) username(string) name(string) address(alphanumeric) dateofbirth(timestamp) email(alphanumeric) accounts(array)"
 ]
 
 # Import the mysql-connector-python module
@@ -36,9 +36,7 @@ def ask():
 
     llm_chain = LLMChain(prompt=prompt, llm=llm)
     response = llm_chain.run(question)
-    conversation_history.append(f"Q: {question}\nA: {response}")
-
-    return jsonify({"response": response})
+    return jsonify({"response": response.replace("\n", "")})
 
 
 @app.route("/query", methods=["POST"])

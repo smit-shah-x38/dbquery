@@ -29,9 +29,21 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS exampledb")
 mycursor.execute("USE exampledb")
 
 
-def ask(question):
-    question = "You are a helpful assistant that specializes in creating queries for databases. Your queries will run on a table called customers with the schema customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255)). Now answer the question: " + str(
+def ask(question, tablename, schema):
+    question = "You are a helpful assistant that specializes in creating queries for databases. Your queries will run on a table called " + tablename + " with the schema " + schema + ". Now answer the question: " + str(
         question) + " if it relates to the subject matter of interacting with a database and return only the query in a runnable format to perform the action requested, else return Please ask a relevant question."
+
+    response = llm(question)
+    response = response.replace("\n", "")
+
+    print("Original response: " + str(response))
+
+    return response
+
+
+def askmongo(question, tablename, schema):
+    question = "You are a helpful assistant that specializes in creating queries for MongoDB databases. Your queries will run on a table called " + tablename + " with the schema " + schema + ". Now answer the question: " + str(
+        question) + " if it relates to the subject matter of interacting with a database and return only the Mongo query in a runnable format to perform the action requested, else return Please ask a relevant question."
 
     response = llm(question)
     response = response.replace("\n", "")
@@ -75,11 +87,28 @@ def validate(sql):
 def resp():
 
     question = request.json["question"]
-    response = ask(question=question)
+    tablename = request.json["tablename"]
+    schema = request.json["schema"]
+    response = ask(question=question, tablename=tablename, schema=schema)
 
     if validate(response):
         result = query(response)
         return jsonify({"Success": str(result)})
+    else:
+        return jsonify({"Error": "Internal", "Response": str(response)})
+
+
+@app.route("/respond/mongo", methods=["POST"])
+@cross_origin()
+def responder():
+
+    question = request.json["question"]
+    tablename = request.json["tablename"]
+    schema = request.json["schema"]
+    response = askmongo(question=question, tablename=tablename, schema=schema)
+
+    if response:
+        return jsonify({"Success": str(response)})
     else:
         return jsonify({"Error": "Internal", "Response": str(response)})
 
