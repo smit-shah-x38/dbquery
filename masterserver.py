@@ -11,8 +11,186 @@ app.config["CORS_HEADERS"] = "Content-Type"
 
 llm = OpenAI(
     openai_api_key="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")
+
+schemavar = """{
+        productId: {
+            type: 'Number',
+            required: true,
+            unique: true
+        },
+        listedOn: {
+            type: 'Number',
+            required: true
+        },
+        listingType: {
+            type: 'String',
+            required: true
+        },
+        productType: {
+            type: 'String',
+            required: true
+        },
+        quantity: {
+            type: 'Number',
+            required: true
+        },
+        status: {
+            type: 'String',
+            required: true
+        },
+        sellerDetails: {
+            userId: {
+                type: 'Number',
+                required: true
+            },
+            name: {
+                type: 'String',
+                required: true
+            },
+            profilePic: {
+                type: 'String',
+                required: true
+            },
+            city: {
+                type: 'String',
+                required: true
+            },
+            role: {
+                type: 'String',
+                required: true
+            },
+            verified: {
+                type: 'Number',
+                required: true
+            },
+            location: {
+                pincode: {
+                    type: 'String',
+                    required: true
+                },
+                pickupAddressId: {
+                    type: 'Number',
+                    required: true
+                },
+                addressLocation: {
+                    latitude: {
+                        type: 'String'
+                    },
+                    longitude: {
+                        type: 'String'
+                    }
+                }
+            }
+        },
+        category: {
+            categoryString: {
+                type: 'String',
+                required: true
+            },
+            categoryName: {
+                type: 'String',
+                required: true
+            },
+            categoryId: {
+                type: 'Number',
+                required: true
+            },
+            categoryIdString: {
+                type: 'String',
+                required: true
+            },
+        },
+        collections: {
+            type: [
+                'String'
+            ],
+            required: true
+        },
+        details: {
+            title: {
+                type: 'String',
+                required: true
+            },
+            description: {
+                type: 'String',
+                required: true
+            },
+            condition: {
+                type: 'String',
+                required: true
+            },
+            brand: {
+                type: 'String',
+                required: true
+            },
+            variantAttribute: {
+                type: 'String',
+                required: true
+            },
+            productAttributes: {
+                type: [
+                    'Mixed'
+                ],
+                required: true
+            },
+            variants: {
+                type: [
+                    'Mixed'
+                ],
+                required: true
+            }
+        },
+        images: {
+            submittedImages: {
+                type: [
+                    'String'
+                ],
+                required: true
+            },
+            thumbImages: {
+                type: [
+                    'String'
+                ],
+                required: true
+            },
+            mainImages: {
+                type: [
+                    'String'
+                ],
+                required: true
+            }
+        },
+        filters: {},
+        activeRank: {
+            type: 'Number',
+            required: true
+        },
+        baseProduct: {
+            type: 'Number',
+            required: true
+        },
+        productLogs: {
+            type: [
+                'Mixed'
+            ],
+            required: true
+        },
+        promoted: {
+            type: 'Number'
+        },
+        promotionDetails: {
+            impressions: {
+                type: 'Number'
+            },
+            views: {
+                type: 'Number',
+            },
+        }
+    }"""
+
 conversation_history = [
-    "You are a helpful assistant that specializes in creating queries for databases. If what the user asks is related to querying a database, return the query in MongoDB, otherwise simply return Please ask a relevant question. The database is called sample_analytics and the collection is called customers. The schema of customers is _id(integer) username(string) name(string) address(alphanumeric) dateofbirth(timestamp) email(alphanumeric) accounts(array)"
+    str("You are a helpful assistant that specializes in creating queries for databases. If what the user asks is related to querying a database, return the query in MongoDB, otherwise simply return Please ask a relevant question. The database is called sample_analytics and the collection is called customers. The schema of customers is " +
+        schemavar)
 ]
 
 # Import the mysql-connector-python module
@@ -30,7 +208,7 @@ def ask():
     global conversation_history
     question = request.json["question"]
     prompt = PromptTemplate(
-        template="\n".join(conversation_history) + "\nQ: {question}\n A: ",
+        template=" ".join(conversation_history) + "\nQ: {question}\n A: ",
         input_variables=["question"],
     )
 
