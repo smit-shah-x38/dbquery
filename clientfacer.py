@@ -1,4 +1,4 @@
-import mysql.connector
+# import mysql.connector
 from flask import Flask, request, jsonify
 import langchain
 from langchain.llms import OpenAI
