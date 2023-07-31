@@ -1,0 +1,525 @@
+2023-07-31 12:01:38,586 INFO    StreamThr :124573 [internal.py:wandb_internal():86] W&B internal server running at pid: 124573, started at: 2023-07-31 12:01:38.585763
+2023-07-31 12:01:38,587 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status
+2023-07-31 12:01:38,594 INFO    WriterThread:124573 [datastore.py:open_for_write():85] open: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/run-5g8t33j1.wandb
+2023-07-31 12:01:38,594 DEBUG   SenderThread:124573 [sender.py:send():379] send: header
+2023-07-31 12:01:38,601 DEBUG   SenderThread:124573 [sender.py:send():379] send: run
+2023-07-31 12:01:39,333 INFO    SenderThread:124573 [dir_watcher.py:__init__():211] watching files in: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files
+2023-07-31 12:01:39,333 INFO    SenderThread:124573 [sender.py:_start_run_threads():1122] run started: 5g8t33j1 with start time 1690804898.585855
+2023-07-31 12:01:39,333 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: summary_record
+2023-07-31 12:01:39,333 INFO    SenderThread:124573 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-07-31 12:01:39,335 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: check_version
+2023-07-31 12:01:39,336 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: check_version
+2023-07-31 12:01:39,401 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: run_start
+2023-07-31 12:01:39,410 DEBUG   HandlerThread:124573 [system_info.py:__init__():31] System info init
+2023-07-31 12:01:39,410 DEBUG   HandlerThread:124573 [system_info.py:__init__():46] System info init done
+2023-07-31 12:01:39,410 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:01:39,410 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:01:39,411 INFO    HandlerThread:124573 [system_monitor.py:probe():201] Collecting system info
+2023-07-31 12:01:39,411 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:01:39,411 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:01:39,412 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:01:39,413 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:01:39,413 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:01:39,441 DEBUG   HandlerThread:124573 [system_info.py:probe():195] Probing system
+2023-07-31 12:01:39,443 DEBUG   HandlerThread:124573 [system_info.py:_probe_git():180] Probing git
+2023-07-31 12:01:39,449 DEBUG   HandlerThread:124573 [system_info.py:_probe_git():188] Probing git done
+2023-07-31 12:01:39,449 DEBUG   HandlerThread:124573 [system_info.py:probe():240] Probing system done
+2023-07-31 12:01:39,449 DEBUG   HandlerThread:124573 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-1038-aws-x86_64-with-glibc2.31', 'python': '3.11.4', 'heartbeatAt': '2023-07-31T12:01:39.441506', 'startedAt': '2023-07-31T12:01:38.581412', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/smit-shah-x38/dbquery', 'commit': '18bad0912b45f9c494da9f32472732104bfa8313'}, 'email': 'smitshahofficial@gmail.com', 'root': '/var/basefolder_smit/dbq/dbquery', 'host': 'ip-172-31-19-120', 'username': 'root', 'executable': '/root/anaconda3/envs/venv/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 2582.7555625000027, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 3168.216, 'min': 0.0, 'max': 0.0}, {'current': 3168.116, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 3167.957, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 3167.817, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2523.163, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 3167.531, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}, {'current': 3109.549, 'min': 0.0, 'max': 0.0}, {'current': 2499.998, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 290.7472343444824, 'used': 145.60360717773438}, 'gpu': 'Tesla T4', 'gpu_count': 4, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 16106127360}, {'name': 'Tesla T4', 'memory_total': 16106127360}, {'name': 'Tesla T4', 'memory_total': 16106127360}, {'name': 'Tesla T4', 'memory_total': 16106127360}], 'memory': {'total': 186.59651947021484}}
+2023-07-31 12:01:39,449 INFO    HandlerThread:124573 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-31 12:01:39,449 INFO    HandlerThread:124573 [system_monitor.py:probe():214] Publishing system info
+2023-07-31 12:01:39,450 DEBUG   HandlerThread:124573 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-31 12:01:39,450 DEBUG   HandlerThread:124573 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-31 12:01:39,450 DEBUG   HandlerThread:124573 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-31 12:01:40,334 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_created():272] file/dir created: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/conda-environment.yaml
+2023-07-31 12:01:40,334 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_created():272] file/dir created: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/requirements.txt
+2023-07-31 12:01:40,334 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_created():272] file/dir created: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/wandb-summary.json
+2023-07-31 12:01:44,123 DEBUG   HandlerThread:124573 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-31 12:01:44,124 INFO    HandlerThread:124573 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-31 12:01:44,127 DEBUG   SenderThread:124573 [sender.py:send():379] send: files
+2023-07-31 12:01:44,128 INFO    SenderThread:124573 [sender.py:_save_file():1376] saving file wandb-metadata.json with policy now
+2023-07-31 12:01:44,128 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:01:44,138 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:01:44,139 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:01:44,335 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/conda-environment.yaml
+2023-07-31 12:01:44,335 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_created():272] file/dir created: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/wandb-metadata.json
+2023-07-31 12:01:44,655 DEBUG   SenderThread:124573 [sender.py:send():379] send: telemetry
+2023-07-31 12:01:44,655 DEBUG   SenderThread:124573 [sender.py:send():379] send: config
+2023-07-31 12:01:44,655 DEBUG   SenderThread:124573 [sender.py:send():379] send: metric
+2023-07-31 12:01:44,656 DEBUG   SenderThread:124573 [sender.py:send():379] send: telemetry
+2023-07-31 12:01:44,656 DEBUG   SenderThread:124573 [sender.py:send():379] send: metric
+2023-07-31 12:01:44,656 WARNING SenderThread:124573 [sender.py:send_metric():1327] Seen metric with glob (shouldn't happen)
+2023-07-31 12:01:44,916 INFO    wandb-upload_0:124573 [upload_job.py:push():131] Uploaded file /tmp/tmpqpg7pf4swandb/zfpmt32j-wandb-metadata.json
+2023-07-31 12:01:45,177 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:01:45,177 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:01:45,177 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:01:45,178 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:01:45,178 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:01:45,178 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:01:45,178 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:01:45,178 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:01:45,465 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:01:45,465 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:01:45,465 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:01:45,465 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:01:49,467 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:01:54,468 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:01:59,139 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:01:59,139 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:01:59,509 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:00,340 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_created():272] file/dir created: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:02:02,340 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:02:04,512 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:09,515 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:10,343 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/config.yaml
+2023-07-31 12:02:14,139 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:02:14,139 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:02:15,464 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:16,345 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:02:20,465 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:25,466 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:29,139 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:02:29,139 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:02:30,507 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:32,350 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:02:35,508 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:40,509 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:44,139 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:02:44,140 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:02:45,539 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:46,354 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:02:50,540 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:55,540 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:02:59,139 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:02:59,140 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:03:01,484 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:02,359 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:03:06,485 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:11,485 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:14,139 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:03:14,140 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:03:16,364 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:03:16,535 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:21,535 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:26,536 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:29,140 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:03:29,140 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:03:32,369 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:03:32,478 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:37,479 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:42,480 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:44,140 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:03:44,140 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:03:46,373 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:03:47,541 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:52,542 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:57,543 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:03:59,140 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:03:59,140 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:04:01,052 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:01,052 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:01,052 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:01,052 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:01,052 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:01,053 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:01,053 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:01,054 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:01,054 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:01,072 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:01,072 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:01,072 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:01,072 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:01,073 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:01,073 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:01,073 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:01,073 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:01,364 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:01,364 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:01,364 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:01,364 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:02,378 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:04:03,365 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:08,366 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:10,052 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:10,052 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:10,052 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:10,052 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:10,052 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:10,053 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:10,053 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:10,054 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:10,054 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:10,073 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:10,073 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:10,073 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:10,074 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:10,074 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:10,074 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:10,074 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:10,074 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:10,367 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:10,367 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:10,367 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:10,367 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:12,015 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:12,016 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:12,016 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:12,016 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:12,016 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:12,016 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:12,016 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:12,016 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:12,016 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:12,017 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:12,017 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:12,018 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:12,018 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:12,018 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:12,019 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:13,026 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:13,026 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:13,026 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:13,026 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:13,027 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:13,027 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:13,028 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:13,028 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:13,028 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:13,561 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:13,561 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:13,561 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:13,562 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:13,562 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:13,562 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:13,562 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:13,562 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:13,843 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:13,844 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:13,844 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:13,844 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:13,845 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:14,140 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:04:14,140 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:04:15,948 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:15,949 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:15,949 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:15,949 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:15,949 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:15,950 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:15,950 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:15,950 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:15,950 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:15,951 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:15,951 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:15,951 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:15,951 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:15,951 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:15,951 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:15,952 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:16,262 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:16,263 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:16,263 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:16,383 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:04:19,264 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:19,331 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:19,331 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:19,331 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:19,331 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:19,332 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:19,332 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:19,332 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:19,333 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:19,333 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:19,338 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:19,338 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:19,338 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:19,338 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:19,338 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:19,338 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:19,339 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:19,339 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:19,645 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:19,645 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:19,645 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:19,645 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:22,033 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:22,033 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:22,033 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:22,033 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:22,034 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:22,034 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:22,034 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:22,035 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:22,035 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:22,053 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:22,053 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:22,053 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:22,053 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:22,053 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:22,053 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:22,054 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:22,054 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:22,348 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:22,348 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:22,348 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:22,348 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:24,349 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:28,488 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:28,488 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:28,488 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:28,489 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:28,489 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:28,489 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:28,490 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:28,490 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:28,491 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:29,010 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:29,010 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:29,010 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:29,010 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:29,011 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:29,011 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:29,011 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:29,011 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:29,297 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:29,297 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:29,297 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:29,297 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:04:29,300 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:29,300 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:04:29,642 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:30,651 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:30,651 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:30,651 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:30,651 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:30,652 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:30,652 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:30,652 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:30,652 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:30,652 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:30,653 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:30,653 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:30,653 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:30,654 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:30,654 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:30,654 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:30,654 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:30,961 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:30,961 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:30,962 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:32,388 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:04:32,979 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:32,979 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:32,979 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:32,979 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:32,980 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:32,980 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:32,980 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:32,981 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:32,981 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:32,985 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:32,985 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:32,985 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:32,986 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:32,986 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:32,986 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:32,986 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:32,986 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:33,291 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:33,292 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:33,292 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:33,292 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:35,293 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:40,294 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:44,140 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:04:44,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:04:45,549 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:46,392 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:04:50,550 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:55,551 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:04:56,341 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: resume
+2023-07-31 12:04:56,341 INFO    HandlerThread:124573 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-31 12:04:56,341 INFO    HandlerThread:124573 [system_monitor.py:start():181] Starting system monitor
+2023-07-31 12:04:56,341 INFO    SystemMonitor:124573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-31 12:04:56,342 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started cpu monitoring
+2023-07-31 12:04:56,342 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started disk monitoring
+2023-07-31 12:04:56,342 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started gpu monitoring
+2023-07-31 12:04:56,343 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started memory monitoring
+2023-07-31 12:04:56,343 INFO    SystemMonitor:124573 [interfaces.py:start():190] Started network monitoring
+2023-07-31 12:04:58,103 DEBUG   SenderThread:124573 [sender.py:send():379] send: config
+2023-07-31 12:04:58,103 DEBUG   SenderThread:124573 [sender.py:send():379] send: metric
+2023-07-31 12:04:58,104 DEBUG   SenderThread:124573 [sender.py:send():379] send: metric
+2023-07-31 12:04:58,104 WARNING SenderThread:124573 [sender.py:send_metric():1327] Seen metric with glob (shouldn't happen)
+2023-07-31 12:04:58,396 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:04:58,620 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: pause
+2023-07-31 12:04:58,620 INFO    HandlerThread:124573 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-31 12:04:58,620 INFO    HandlerThread:124573 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-31 12:04:58,620 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-31 12:04:58,620 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-31 12:04:58,620 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-31 12:04:58,620 DEBUG   SystemMonitor:124573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-31 12:04:58,621 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined disk monitor
+2023-07-31 12:04:58,902 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-31 12:04:58,903 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined memory monitor
+2023-07-31 12:04:58,903 INFO    HandlerThread:124573 [interfaces.py:finish():202] Joined network monitor
+2023-07-31 12:04:58,903 DEBUG   SenderThread:124573 [sender.py:send():379] send: stats
+2023-07-31 12:04:59,140 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:04:59,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:05:00,397 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:05:01,509 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:02,397 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:05:06,510 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:11,511 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:14,140 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:05:14,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:05:16,402 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:05:16,529 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:17,402 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/config.yaml
+2023-07-31 12:05:21,897 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:26,898 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:29,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:05:29,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:05:30,406 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:05:32,407 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:05:32,544 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:37,544 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:42,545 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:44,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:05:44,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:05:46,412 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:05:48,537 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:53,538 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:59,135 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:05:59,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:05:59,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:06:00,416 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:06:02,417 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:06:04,541 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:09,542 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:14,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:06:14,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:06:15,517 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:16,421 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:06:20,518 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:25,519 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:29,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:06:29,141 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:06:30,426 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:06:31,446 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:32,426 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:06:36,447 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:41,448 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:44,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:06:44,142 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:06:46,431 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:06:46,504 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:51,505 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:56,505 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:06:59,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:06:59,142 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:07:00,435 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:01,538 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:02,436 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:06,539 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:11,540 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:14,141 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:07:14,142 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:07:14,440 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:16,441 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:17,531 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:22,532 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:27,532 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:29,142 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:07:29,142 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:07:30,445 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:32,446 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:32,538 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:37,539 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:42,540 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:44,142 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:07:44,142 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:07:44,450 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:46,450 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:07:47,600 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:52,601 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:57,602 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:07:59,142 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:07:59,142 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:08:00,455 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:02,456 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:03,504 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:08,505 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:14,139 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:14,142 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:08:14,142 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:08:14,460 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:16,460 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:19,601 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:24,602 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:29,142 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:08:29,143 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:08:30,465 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:30,496 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:32,465 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:35,496 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:40,497 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:44,143 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:08:44,143 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:08:44,469 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:45,547 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:46,470 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:08:50,548 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:55,548 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:08:59,143 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:08:59,143 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:09:00,474 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:01,459 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:02,475 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:06,460 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:11,460 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:14,143 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:09:14,143 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:09:14,479 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:16,479 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:16,531 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:21,532 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:26,532 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:29,143 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:09:29,143 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:09:30,484 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:32,484 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:32,496 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:37,497 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:42,498 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:44,143 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:09:44,144 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:09:44,488 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:46,489 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:09:47,553 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:52,554 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:57,555 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:09:59,143 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:09:59,144 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:10:00,494 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:02,494 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:03,545 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:08,545 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:14,142 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:14,143 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:10:14,144 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:10:14,498 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:16,499 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:19,542 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:24,543 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:29,144 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:10:29,144 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:10:30,504 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:30,507 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:32,504 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:35,508 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:40,508 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:44,144 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 12:10:44,144 DEBUG   SenderThread:124573 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 12:10:44,508 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:46,486 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 12:10:46,509 INFO    Thread-12 :124573 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_120138-5g8t33j1/files/output.log
+2023-07-31 12:10:51,487 DEBUG   HandlerThread:124573 [handler.py:handle_request():144] handle_request: status_report
