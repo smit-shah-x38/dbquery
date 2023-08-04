@@ -1757,3 +1757,9 @@
 2023-07-31 13:09:51,759 DEBUG   SenderThread:125147 [sender.py:send_request():406] send_request: stop_status
 2023-07-31 13:09:54,060 INFO    Thread-12 :125147 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_121116-2lox1s75/files/output.log
 2023-07-31 13:09:54,123 DEBUG   HandlerThread:125147 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 13:09:59,124 DEBUG   HandlerThread:125147 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 13:10:04,124 DEBUG   HandlerThread:125147 [handler.py:handle_request():144] handle_request: status_report
+2023-07-31 13:10:06,064 INFO    Thread-12 :125147 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_121116-2lox1s75/files/output.log
+2023-07-31 13:10:06,759 DEBUG   HandlerThread:125147 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-31 13:10:06,759 DEBUG   SenderThread:125147 [sender.py:send_request():406] send_request: stop_status
+2023-07-31 13:10:08,064 INFO    Thread-12 :125147 [dir_watcher.py:_on_file_modified():289] file/dir modified: /var/basefolder_smit/dbq/dbquery/wandb/run-20230731_121116-2lox1s75/files/output.log
